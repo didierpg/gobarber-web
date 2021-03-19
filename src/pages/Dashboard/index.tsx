@@ -1,6 +1,7 @@
 import React from 'react';
 import { FiClock, FiPower } from 'react-icons/fi';
 import {
+  Appointment,
   Calendar,
   Container,
   Content,
@@ -9,6 +10,7 @@ import {
   NextAppointment,
   Profile,
   Schedule,
+  Section,
 } from './styles';
 
 import logoImg from '../../assets/logo.svg';
@@ -58,6 +60,81 @@ const Dashboard: React.FC = () => {
               </span>
             </div>
           </NextAppointment>
+
+          <Section>
+            <strong>Manhã</strong>
+            <Appointment>
+              <span>
+                <FiClock />
+                08:00
+              </span>
+              <div>
+                <img
+                  src="https://avatars.githubusercontent.com/u/4148010?s=400&v=4"
+                  alt="Didier Ferreira"
+                />
+                <strong>Didier Ferreira</strong>
+              </div>
+            </Appointment>
+
+            <Appointment>
+              <span>
+                <FiClock />
+                08:00
+              </span>
+              <div>
+                <img
+                  src="https://avatars.githubusercontent.com/u/4148010?s=400&v=4"
+                  alt="Didier Ferreira"
+                />
+                <strong>Didier Ferreira</strong>
+              </div>
+            </Appointment>
+            <Appointment>
+              <span>
+                <FiClock />
+                08:00
+              </span>
+              <div>
+                <img
+                  src="https://avatars.githubusercontent.com/u/4148010?s=400&v=4"
+                  alt="Didier Ferreira"
+                />
+                <strong>Didier Ferreira</strong>
+              </div>
+            </Appointment>
+          </Section>
+
+          <Section>
+            <strong>Tarde</strong>
+
+            <Appointment>
+              <span>
+                <FiClock />
+                08:00
+              </span>
+              <div>
+                <img
+                  src="https://avatars.githubusercontent.com/u/4148010?s=400&v=4"
+                  alt="Didier Ferreira"
+                />
+                <strong>Didier Ferreira</strong>
+              </div>
+            </Appointment>
+            <Appointment>
+              <span>
+                <FiClock />
+                08:00
+              </span>
+              <div>
+                <img
+                  src="https://avatars.githubusercontent.com/u/4148010?s=400&v=4"
+                  alt="Didier Ferreira"
+                />
+                <strong>Didier Ferreira</strong>
+              </div>
+            </Appointment>
+          </Section>
         </Schedule>
         <Calendar />
       </Content>
